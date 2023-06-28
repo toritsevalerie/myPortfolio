@@ -1,0 +1,88 @@
+@import "variables";
+
+// Home Page
+.projects-home-page {
+  padding-top: 50px;
+}
+.project-one-home-page,
+.project-two-home-page,
+.project-three-home-page,
+.project-four-home-page {
+  .tags {
+    display: flex;
+    li {
+      border: 1px solid white;
+      margin: 0px 10px;
+      color: white;
+      list-style: none;
+      border-radius: 30px;
+      padding: 5px 20px;
+    }
+  }
+  .project-buttons-ux button {
+    border: 1px solid black;
+    margin: 0px 10px 0px 0px;
+    background-color: black;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+  }
+  .description {
+    line-height: 22px;
+  }
+}
+
+// Project Page
+.projects-project-page h2 span {
+  border: 1px solid black;
+  color: $primarygreen;
+}
+.project-one-project-page {
+  .project-one {
+    display: flex;
+  }
+  .description-tags {
+display: flex;
+  li {
+    border: 1px solid white;
+    margin: 0px 10px;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+  }
+}
+}
+
+.projects-project-page {
+  padding-top: 50px;
+}
+.project-one-project-page,
+.project-two-project-page,
+.project-three-project-page,
+.project-four-project-page {
+  .tags {
+    display: flex;
+    li {
+      border: 1px solid white;
+      margin: 0px 10px;
+      color: white;
+      list-style: none;
+      border-radius: 30px;
+      padding: 5px 20px;
+    }
+  }
+  .project-buttons-ux button {
+    border: 1px solid black;
+    margin: 0px 10px 0px 0px;
+    background-color: black;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+  }
+  .description {
+    line-height: 22px;
+  }
+}

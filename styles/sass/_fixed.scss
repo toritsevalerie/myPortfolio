@@ -1,5 +1,7 @@
+@import "variables";
+
 .fixed-intro-para {
-  margin-top: 95px;
+  margin-top: 65px;
   padding: 0px 10px 0px 10px;
   line-height: 27px;
   .job-title {
@@ -36,4 +38,16 @@
 .divider {
   border: 0.5px solid white;
   height: 85vh;
+}
+.theme-toggle {
+  
+  border-radius: 100px;
+  border: none;
+
+  background-color: $primarybeige;
+  padding: 10px 20px;
+}
+.theme-toggle:hover {
+  cursor: pointer;
+  border: 2px solid black
 }

@@ -261,7 +261,7 @@ html {
 }
 
 .fixed-intro-para {
-  margin-top: 95px;
+  margin-top: 65px;
   padding: 0px 10px 0px 10px;
   line-height: 27px;
 }
@@ -309,12 +309,90 @@ html {
   height: 85vh;
 }
 
+.theme-toggle {
+  border-radius: 100px;
+  border: none;
+  background-color: #eaeae7;
+  padding: 10px 20px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  background-color: #ccdab6;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation-bar {
+  display: grid;
+  gap: 30px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.navigation-bar li {
+  list-style: none;
+}
+.navigation-bar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation-bar {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.resume-and-contact {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.resume-and-contact li {
+  list-style: none;
+}
+.resume-and-contact li a {
+  color: black;
+  text-decoration: none;
+}
+
+.resume-and-contact li {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
 html,
 body,
 ul {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+}
+
+.wrapper {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main-background {
@@ -333,6 +411,7 @@ ul {
 }
 
 .website-container {
+  overflow: hidden;
   position: fixed;
   width: 95vw;
   height: 90vh;
@@ -340,11 +419,12 @@ ul {
   display: -ms-flexbox;
   display: flex;
   border-radius: 38px;
-  border: solid #EAEAE7 2px;
-  background: #EAEAE7;
+  border: solid #ccdab6 2px;
+  background: #ccdab6;
 }
 
 .fixed-side-bar {
+  overflow-y: auto;
   width: 30%;
   margin: 10px;
   display: -webkit-box;
@@ -359,6 +439,115 @@ ul {
 .changing-content {
   width: 70%;
   margin: 10px;
+  overflow-y: auto;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
+}
+
+.projects-home-page {
+  padding-top: 50px;
+}
+
+.project-one-home-page .tags,
+.project-two-home-page .tags,
+.project-three-home-page .tags,
+.project-four-home-page .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-one-home-page .tags li,
+.project-two-home-page .tags li,
+.project-three-home-page .tags li,
+.project-four-home-page .tags li {
+  border: 1px solid white;
+  margin: 0px 10px;
+  color: white;
+  list-style: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.project-one-home-page .project-buttons-ux button,
+.project-two-home-page .project-buttons-ux button,
+.project-three-home-page .project-buttons-ux button,
+.project-four-home-page .project-buttons-ux button {
+  border: 1px solid black;
+  margin: 0px 10px 0px 0px;
+  background-color: black;
+  color: white;
+  list-style: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+.project-one-home-page .description,
+.project-two-home-page .description,
+.project-three-home-page .description,
+.project-four-home-page .description {
+  line-height: 22px;
+}
+
+.projects-project-page h2 span {
+  border: 1px solid black;
+  color: #ccdab6;
+}
+
+.project-one-project-page .project-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-one-project-page .description-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-one-project-page .description-tags li {
+  border: 1px solid white;
+  margin: 0px 10px;
+  color: white;
+  list-style: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+.projects-project-page {
+  padding-top: 50px;
+}
+
+.project-one-project-page .tags,
+.project-two-project-page .tags,
+.project-three-project-page .tags,
+.project-four-project-page .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-one-project-page .tags li,
+.project-two-project-page .tags li,
+.project-three-project-page .tags li,
+.project-four-project-page .tags li {
+  border: 1px solid white;
+  margin: 0px 10px;
+  color: white;
+  list-style: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+.project-one-project-page .project-buttons-ux button,
+.project-two-project-page .project-buttons-ux button,
+.project-three-project-page .project-buttons-ux button,
+.project-four-project-page .project-buttons-ux button {
+  border: 1px solid black;
+  margin: 0px 10px 0px 0px;
+  background-color: black;
+  color: white;
+  list-style: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+.project-one-project-page .description,
+.project-two-project-page .description,
+.project-three-project-page .description,
+.project-four-project-page .description {
+  line-height: 22px;
 }

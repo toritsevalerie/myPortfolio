@@ -1,0 +1,51 @@
+@import "variables";
+
+nav {
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  background-color: $primarygreen;
+  
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-bar {
+  display: grid;
+  gap: 30px;
+  width: min-content;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  li {
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.navigation-bar {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+.resume-and-contact {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  width: min-content;
+  li {
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.resume-and-contact li {
+  border: 1px solid black;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}

@@ -7,6 +7,11 @@ ul {
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
+.wrapper {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
+}
 .main-background {
   width: 100vw;
   height: 100vh;
@@ -17,18 +22,18 @@ ul {
 }
 
 .website-container {
-  // overflow: auto;
+  overflow: hidden;
   position: fixed;
   width: 95vw;
   height: 90vh;
   display: flex;
   border-radius: 38px;
-  border: solid $primarybeige 2px;
-  background: $primarybeige;
+  border: solid $primarygreen 2px;
+  background: $primarygreen;
 }
 
 .fixed-side-bar {
-  
+  overflow-y: auto;
   width: 30%;
   margin: 10px;
   display: flex;
@@ -39,7 +44,7 @@ ul {
 .changing-content {
   width: 70%;
   margin: 10px;
-
+  overflow-y: auto;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
 }
