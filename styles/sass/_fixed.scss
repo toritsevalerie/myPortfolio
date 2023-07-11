@@ -1,34 +1,67 @@
 @import "variables";
 
 .fixed-intro-para {
-  margin-top: 65px;
-  padding: 0px 10px 0px 10px;
-  line-height: 27px;
+  margin-top: 35px;
+  padding: 0px 15px 0px 15px;
+  line-height: 26px;
+  button {
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+  }
   .job-title {
     font-weight: 600;
+    margin-top: 8px;
   }
 
-  hr {
-    margin-top: 100px;
-    border: 0.5px solid black;
-  }
-  .social-media-icons ul {
-    display: flex;
-    color: black;
-    gap: 20px;
-    li {
-      list-style: none;
-      .fa-brands,
-      .fa-solid {
-        color: black;
+  .social-media-icons {
+    margin: 20px 0px;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      color: black;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px 10px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        .fa-brands,
+        .fa-solid {
+          color: black;
+          margin-right: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
+
+  .social-media-icons li:hover {
+    background-color: #c4b6da;
+    border: none;
+    box-shadow: 0px 15px 20px #dad6b6;
+    transform: translateY(-7px);
+    cursor: pointer;
+  }
+
   .copyright {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+    padding-top: 80px;
     p {
       margin: 2px 0px 2px 0px;
       font-size: 14px;
@@ -36,18 +69,18 @@
   }
 }
 .divider {
-  border: 0.5px solid white;
-  height: 85vh;
+  border: 0.5px dotted rgb(0, 0, 0);
+  height: 90vh;
 }
 .theme-toggle {
-  
   border-radius: 100px;
   border: none;
-
+  transition: all 0.3s ease 0s;
   background-color: $primarybeige;
   padding: 10px 20px;
 }
 .theme-toggle:hover {
   cursor: pointer;
-  border: 2px solid black
+  border: 2px solid black;
+  transform: translateY(-2px);
 }

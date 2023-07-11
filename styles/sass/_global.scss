@@ -18,14 +18,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/background.svg);
+  background-image: url(/assets/backgroundimagedark.svg);
 }
 
 .website-container {
   overflow: hidden;
   position: fixed;
-  width: 95vw;
-  height: 90vh;
+  width: 98vw;
+  height: 94vh;
   display: flex;
   border-radius: 38px;
   border: solid $primarygreen 2px;
@@ -47,4 +47,16 @@ ul {
   overflow-y: auto;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
+}
+
+// Responsiveness
+
+@media (max-width: 1370px) {
+  .main-background {
+    background-image: url();
+  }
+  .website-container {
+    border-radius: 38px;
+    border: 2px solid black;
+  }
 }

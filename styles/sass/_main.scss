@@ -1,15 +1,27 @@
 @import "variables";
 
-// Home Page
+// Home Page & Project Page
+
 .projects-home-page {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .project-one-home-page,
 .project-two-home-page,
 .project-three-home-page,
-.project-four-home-page {
+.project-four-home-page,
+.project-one-project-page-drop-down,
+.project-two-project-page-drop-down,
+.project-three-project-page-drop-down,
+.project-four-project-page-drop-down,
+.project-five-project-page-drop-down,
+.project-six-project-page-drop-down {
+  .project-image {
+    height: 300px;
+    border-radius: 20px;
+  }
   .tags {
     display: flex;
+    padding: 20px 10px;
     li {
       border: 1px solid white;
       margin: 0px 10px;
@@ -25,43 +37,93 @@
     background-color: black;
     color: white;
     list-style: none;
-    border-radius: 30px;
-    padding: 15px 20px;
+    border-radius: 5px;
+    padding: 12px 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
   }
   .description {
     line-height: 22px;
+    margin-bottom: 60px;
   }
 }
+.project-one-project-page-drop-down,
+.project-two-project-page-drop-down,
+.project-three-project-page-drop-down,
+.project-four-project-page-drop-down,
+.project-five-project-page-drop-down,
+.project-six-project-page-drop-down {
+  display: none;
+}
 
+.project-one-home-page,
+.project-one-project-page-drop-down {
+  .project-image {
+    background-image: url(/assets/oneKardImage.png);
+    height: 300px;
+  }
+}
+.project-two-home-page {
+  .project-image {
+    background-image: url(/assets/localGlobalImage.png);
+  }
+}
 // Project Page
-.projects-project-page h2 span {
-  border: 1px solid black;
-  color: $primarygreen;
-}
-.project-one-project-page {
-  .project-one {
-    display: flex;
+.projects-project-page,
+.about-me {
+  h2 {
+    span {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 1px;
+    }
   }
-  .description-tags {
-display: flex;
-  li {
-    border: 1px solid white;
-    margin: 0px 10px;
-    color: white;
-    list-style: none;
-    border-radius: 30px;
-    padding: 5px 20px;
-  }
-}
-}
-
-.projects-project-page {
-  padding-top: 50px;
 }
 .project-one-project-page,
 .project-two-project-page,
 .project-three-project-page,
-.project-four-project-page {
+.project-four-project-page,
+.project-five-project-page,
+.project-six-project-page {
+  .project-one,
+  .project-two,
+  .project-three,
+  .project-four,
+  .project-five,
+  .project-six {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    .title {
+      margin: 0px;
+    }
+  }
+  .description-tags {
+    display: flex;
+    .view-button {
+      border: none;
+    }
+    li {
+      border: 1px solid rgb(0, 0, 0);
+      margin: 0px 10px;
+      color: rgb(0, 0, 0);
+      list-style: none;
+      border-radius: 30px;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.projects-project-page {
+  padding-top: 20px;
+  color: black;
+}
+.project-one-project-page,
+.project-two-project-page,
+.project-three-project-page,
+.project-four-project-page,
+.project-five-project-page,
+.project-six-project-page {
   .tags {
     display: flex;
     li {
@@ -85,4 +147,50 @@ display: flex;
   .description {
     line-height: 22px;
   }
+}
+.project-buttons-ux button:hover {
+  background-color: #c4b6da;
+  border: none;
+  box-shadow: 0px 15px 20px #dad6b6;
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.view-button i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+// About Page
+
+.about-me-container {
+  display: flex;
+  .image-container {
+    width: 50%;
+  }
+  .text-container {
+    width: 50%;
+    line-height: 22px;
+  }
+}
+
+// Art Page 
+
+
+
+
+
+
+// Contatct Page 
+
+
+
+
+
+
+
+
+// Responsiveness 
+
+@media (max-width:1370px) { 
+
 }
