@@ -90,13 +90,61 @@
                     <li><a href="/projects.html">PROJECTS</a></li>
                     <li><a href="/about.html">ABOUT</a></li>
                     <li><a href="/art.html">ART</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
                   </ul>
                 </div>
               </nav>
             </div>
           </header>
           <main>
-            <div class="wrapper"></div>
+            <div class="wrapper">
+              <div class="form-contact-container">
+                <form action="" method="POST" name="my-contact-form">
+                  <div class="form-text-container">
+                    <h2 class="form-title">KEEP <span>IN TOUCH</span></h2>
+                    <p>
+                      Thank you for taking the time to look through my
+                      portfolio! If you're interested in staying in touch,
+                      connect with me via my socials or leave a message.
+                    </p>
+                  </div>
+                  <div class="form-container">
+                    <div class="name-email-container">
+                      <div class="name-field">
+                        <label for="user-name">Name</label>
+                        <input
+                          type="text"
+                          id="user-name"
+                          name="user-name"
+                          required
+                        />
+                      </div>
+                      <div class="email-field">
+                        <label for="email-address">Email</label>
+                        <input
+                          type="text"
+                          id="email-address"
+                          name="email-address"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="message-field">
+                      <label for="message">Message</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </main>
         </div>
       </div>

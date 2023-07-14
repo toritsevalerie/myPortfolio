@@ -7,6 +7,7 @@ ul {
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
+
 .wrapper {
   max-width: 830px;
   width: 100%;
@@ -32,15 +33,6 @@ ul {
   background: $primarygreen;
 }
 
-.fixed-side-bar {
-  overflow-y: auto;
-  width: 30%;
-  margin: 10px;
-  display: flex;
-  align-self: self-start;
-  border-top-left-radius: 38px;
-  border-bottom-left-radius: 38px;
-}
 .changing-content {
   width: 70%;
   margin: 10px;
@@ -53,10 +45,70 @@ ul {
 
 @media (max-width: 1370px) {
   .main-background {
-    background-image: url();
+    background-image: url(/assets/backgroundimagedark.svg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+}
+@media (max-width: 1365px) {
+  .main-background {
+    background-image: url(/assets/backgroundsecond.svg);
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+}
+@media (max-width: 1345px) {
+  .responsive-wrapper {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $primarygreen;
+  }
+  .main-background {
+    height: initial;
+    display: initial;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/ipadBgd.svg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-color: black;
   }
   .website-container {
-    border-radius: 38px;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: initial;
+    position: initial;
+    border-radius: initial;
+  }
+  .fixed-side-bar {
+    overflow-y: initial;
+    width: 100%;
+
+    h1 {
+      margin-top: 15px;
+    }
+  }
+  .changing-content {
+    width: initial;
+    margin: 0px;
+    overflow-y: initial;
+
+    nav {
+      display: none;
+    }
+    .wrapper {
+      max-width: 950px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .copyright p,
+  .divider {
+    display: none;
+  }
+  .responsive-nav {
+    display: block;
   }
 }

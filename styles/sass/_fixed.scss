@@ -1,5 +1,14 @@
 @import "variables";
 
+.fixed-side-bar {
+  overflow-y: auto;
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  align-self: self-start;
+  border-top-left-radius: 38px;
+  border-bottom-left-radius: 38px;
+}
 .fixed-intro-para {
   margin-top: 35px;
   padding: 0px 15px 0px 15px;
@@ -84,3 +93,5 @@
   border: 2px solid black;
   transform: translateY(-2px);
 }
+
+
