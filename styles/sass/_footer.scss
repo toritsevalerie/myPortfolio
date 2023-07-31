@@ -7,6 +7,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
+  align-items: center;
   li {
     list-style: none;
     display: flex;

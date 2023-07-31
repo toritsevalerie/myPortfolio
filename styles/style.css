@@ -268,6 +268,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footerBar li {
   list-style: none;
@@ -310,9 +313,9 @@ footer {
 }
 .navigationBar .menuTitle {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 33px;
   letter-spacing: 2px;
-  -webkit-transform: rotate(270deg); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+  -webkit-transform: rotate(270deg); /* Safari and Chrome */ /* Firefox */
   transform: rotate(270deg);
 }
 
@@ -324,29 +327,41 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 535px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .navIcons .fa-solid.fa-bars {
   text-align: center;
   margin: 20px 0px;
 }
 
+.skillsPage .skillsContainer {
+  margin: 70px;
+}
+.skillsPage .introBlurb {
+  font-family: HelveticaTextbook;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 12px;
+}
+.skillsPage .skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.skillsPage .skills li {
+  list-style: none;
+  font-size: 22px;
+  border: 1px solid #1d1d1d;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 35px;
+}
+
 .websiteContent {
   overflow-y: scroll;
-}
-.websiteContent .homePage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .websiteContent .homePage .title {
   font-family: HelveticaRounded;
@@ -364,11 +379,10 @@ footer {
 .websiteContent .homePage .recentProjects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
+  gap: 50px;
   margin: 45px 0px;
 }
 .websiteContent .homePage .recentProjects .individualProject {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,9 +397,9 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #1d1d1d;
-  padding: 10px 5px 5px 10px;
-  height: 305px;
-  width: 351px;
+  padding: 35px 5px 35px 10px;
+  height: 410px;
+  width: 360px;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
 }
@@ -398,6 +412,27 @@ footer {
 }
 .websiteContent .homePage .recentProjects .individualProject .tags {
   margin-top: 20px;
+}
+.websiteContent .homePage .recentProjects .individualProject .projectButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.websiteContent .homePage .recentProjects .individualProject .projectButtonContainer button {
+  border: 1px solid #1d1d1d;
+  padding: 10px 8px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.websiteContent .homePage .recentProjects .individualProject button {
+  border: 1px solid #1d1d1d;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
 }
 .websiteContent .homePage .recentProjects .individualProject:hover {
   color: #4d2d18;
@@ -416,6 +451,102 @@ footer {
   color: #ffffff;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+}
+
+.aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 230px;
+  gap: 10px;
+}
+.aboutMeContainer div {
+  border: 1px solid #1d1d1d;
+  padding: 20px 10px;
+  border-radius: 20px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.aboutMeContainer img {
+  border: 1px solid #1d1d1d;
+}
+
+.projectPage .introBlurb {
+  font-family: HelveticaTextbook;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 12px;
+}
+.projectPage .projectsProjectPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 20px 68px;
+}
+.projectPage .projectsProjectPage .individualProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #1d1d1d;
+  padding: 35px 5px 35px 10px;
+  height: 410px;
+  width: 360px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+.projectPage .projectsProjectPage .individualProject h2 {
+  margin-bottom: 20px;
+}
+.projectPage .projectsProjectPage .individualProject p {
+  padding: 0px 20px 10px 15px;
+  font-weight: 300;
+}
+.projectPage .projectsProjectPage .individualProject .tags {
+  margin-top: 20px;
+}
+.projectPage .projectsProjectPage .individualProject .projectButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.projectPage .projectsProjectPage .individualProject .projectButtonContainer button {
+  border: 1px solid #1d1d1d;
+  padding: 10px 8px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.projectPage .projectsProjectPage .individualProject button {
+  border: 1px solid #1d1d1d;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.projectPage .projectsProjectPage .individualProject:hover {
+  color: #4d2d18;
+  background-image: none;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 html,
@@ -478,11 +609,32 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 95vh;
+  height: 96vh;
+  width: 100vw;
   border: 1px solid #1d1d1d;
   padding: 20px;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+.homePage,
+.skillsPage,
+.projectPage,
+.contactPage,
+.aboutPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @font-face {

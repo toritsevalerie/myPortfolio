@@ -3,10 +3,6 @@
 .websiteContent {
   overflow-y: scroll;
   .homePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .title {
       font-family: HelveticaRounded;
       font-size: 50px;
@@ -23,19 +19,19 @@
     .recentProjects {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 100px;
+      gap: 50px;
       margin: 45px 0px;
 
       .individualProject {
-        cursor: pointer;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border: 1px solid $black;
-        padding: 10px 5px 5px 10px;
-        height: 305px;
-        width: 351px;
+        padding: 35px 5px 35px 10px;
+        height: 410px;
+        width: 360px;
         transition: 0.3s ease 0s;
 
         h2 {
@@ -47,6 +43,25 @@
         }
         .tags {
           margin-top: 20px;
+        }
+        .projectButtonContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: center;
+          gap: 10px;
+          button {
+            border: 1px solid $black;
+            padding: 10px 8px;
+            border-radius: 10px;
+            background-color: $white;
+          }
+        }
+        button {
+          border: 1px solid $black;
+          padding: 10px 5px;
+          border-radius: 10px;
+          background-color: $white;
+          margin-top: 10px;
         }
       }
       .individualProject:hover {
@@ -60,6 +75,7 @@
       border: 1px solid #000;
       background-color: $white;
       padding: 20px 18px;
+      
     }
     .viewAllProjectsButton:hover {
       background-color: $brown;
