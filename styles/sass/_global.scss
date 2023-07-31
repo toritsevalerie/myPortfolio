@@ -5,110 +5,64 @@ body,
 ul {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: HelveticaRounded;
+}
+h1 {
+  margin: 20px 0px 20px 0px;
+  font-size: 50px;
+  // color: $brown;
+}
+h2 {
+  margin: 0px;
+  font-size: 28px;
+  // color: $brown;
+}
+p {
+  margin: 0px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  // color: $brown;
+}
+.tags {
+  font-size: 20px;
+}
+button {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
 }
 
 .wrapper {
-  max-width: 830px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
-.main-background {
-  width: 100vw;
-  height: 100vh;
+.mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/backgroundimagedark.svg);
+  padding: 20px;
+  background-image: url(/assets/background.svg);
+  background-repeat: repeat;
 }
 
-.website-container {
-  overflow: hidden;
-  position: fixed;
-  width: 98vw;
-  height: 94vh;
+.websiteContentContainer {
   display: flex;
-  border-radius: 38px;
-  border: solid $primarygreen 2px;
-  background: $primarygreen;
+  height: 95vh;
+  border: 1px solid $black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $white;
 }
 
-.changing-content {
-  width: 70%;
-  margin: 10px;
-  overflow-y: auto;
-  border-top-right-radius: 38px;
-  border-bottom-right-radius: 38px;
+@font-face {
+  font-family: HelveticaTextbook;
+  src: url(/Fonts/HelveticaTextbook.ttf);
 }
 
-// Responsiveness
-
-@media (max-width: 1370px) {
-  .main-background {
-    background-image: url(/assets/backgroundimagedark.svg);
-    background-size: contain;
-    background-repeat: repeat-y;
-  }
+@font-face {
+  font-family: HelveticaRounded;
+  src: url(/Fonts/HelveticaRounded.ttf);
 }
-@media (max-width: 1365px) {
-  .main-background {
-    background-image: url(/assets/backgroundsecond.svg);
-    background-size: cover;
-    background-repeat: repeat-y;
-  }
-}
-@media (max-width: 1345px) {
-  .responsive-wrapper {
-    max-width: 950px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: $primarygreen;
-  }
-  .main-background {
-    height: initial;
-    display: initial;
-    display: flex;
-    justify-content: center;
-    background-image: url(/assets/ipadBgd.svg);
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-color: black;
-  }
-  .website-container {
-    display: flex;
-    flex-direction: column;
-    width: 1100px;
-    height: initial;
-    position: initial;
-    border-radius: initial;
-  }
-  .fixed-side-bar {
-    overflow-y: initial;
-    width: 100%;
 
-    h1 {
-      margin-top: 15px;
-    }
-  }
-  .changing-content {
-    width: initial;
-    margin: 0px;
-    overflow-y: initial;
-
-    nav {
-      display: none;
-    }
-    .wrapper {
-      max-width: 950px;
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-  .copyright p,
-  .divider {
-    display: none;
-  }
-  .responsive-nav {
-    display: block;
-  }
-}
+// Remove scroll looking thing

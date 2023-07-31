@@ -1,0 +1,114 @@
+{
+  "recentProjects": {
+    "projectOne": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "skinned by nature website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "A personalized skincare website for a UK based startup company that allows users to discover, customize, and order skincare products based on their indidviual preferences. Enjoy a seamless checkout process and a visually appealing interface for an exceptional user experience, try it out!  This website is the initial release/version 1.0 and was built using HTML, CSS & JavaScript",
+      "title": "Skinned By Nature - For You, By Nature",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/toritsevalerie/SkinnedByNature",
+      "caseStudy": ""
+    },
+    "projectTwo": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "one kard website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "OneKard is a startup payment solutions company based in Lagos, Nigeria. This app is a fintech banking app that enables seamless money transfers within Africa and across continents. Experience personalized banking at your fingertips, with easy transfers and a user-friendly interface, try it out! Built using React.JS, JSX & CSS.",
+      "title": "OneKard - Spend, Send and Receive money in various currencies ",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/toritsevalerie/one-Kard",
+      "caseStudy": ""
+    },
+    "projectThree": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "local global world website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "Local Global World is an up-and-coming creative studio and community in Toronto Ontario. Recently launched in 2022, they are working to get their name in the creative scene and grow their community. This website is the initial release/version 1.0 and was designed using Figma and built using Next.JS",
+      "title": "Local Global World - Sharing Stories, Building Connections",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/local-global-world/local-global-world",
+      "caseStudy": ""
+    }
+  },
+  "projects": {
+    "projectOne": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "skinned by nature website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "A personalized skincare website for a UK based startup company that allows users to discover, customize, and order skincare products based on their indidviual preferences. Enjoy a seamless checkout process and a visually appealing interface for an exceptional user experience, try it out!  This website is the initial release/version 1.0 and was built using HTML, CSS & JavaScript",
+      "title": "Skinned By Nature - For You, By Nature",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/toritsevalerie/SkinnedByNature",
+      "caseStudy": ""
+    },
+    "projectTwo": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "one kard website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "OneKard is a startup payment solutions company based in Lagos, Nigeria. This app is a fintech banking app that enables seamless money transfers within Africa and across continents. Experience personalized banking at your fingertips, with easy transfers and a user-friendly interface, try it out! Built using React.JS, JSX & CSS.",
+      "title": "OneKard - Spend, Send and Receive money in various currencies ",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/toritsevalerie/one-Kard",
+      "caseStudy": ""
+    },
+    "projectThree": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "local global world website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "Brand Design",
+      "description": "Local Global World is an up-and-coming creative studio and community in Toronto Ontario. Recently launched in 2022, they are working to get their name in the creative scene and grow their community. This website is the initial release/version 1.0 and was designed using Figma and built using Next.JS",
+      "title": "Local Global World - Sharing Stories, Building Connections",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/local-global-world/local-global-world",
+      "caseStudy": ""
+    },
+    "projectFour": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "film factory website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "",
+      "description": "A React app made with other developers that allows users to discover foreign movies, users can search using their preferred movies as references and save their searches along with favorite movies for future reference. This app incorperates the use of Firebase.",
+      "title": "The Film Factory - Find Foreign Movies You Love",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/francella-toritse-wilson/the-film-factory",
+      "caseStudy": ""
+    },
+    "projectFive": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "music scape website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "UX/UI Design",
+      "tagBrand": "",
+      "description": "A React app that uses Firebase to allows users to discover, explore, and engage with various music events, incorporates user authentication and gives users a unique experience, try it out! ",
+      "title": "Music Scape - Find Music Events Near You",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/toritsevalerie/Music-Scape-App",
+      "caseStudy": ""
+    },
+    "projectSix": {
+      "projectImage": "https://placebear.com/640/360",
+      "imageAlt": "pronia project website mockup images",
+      "tagWeb": "Web Development",
+      "tagUx": "",
+      "tagBrand": "",
+      "description": "A React app that uses Firebase to allows users to discover, explore, and engage with various music events, incorporates user authentication and gives users a unique experience, try it out! ",
+      "title": "Pronia Project - Find Plants You Love",
+      "site": "https://neon-medovik-43961c.netlify.app/",
+      "code": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
+      "caseStudy": ""
+    }
+  }
+}
