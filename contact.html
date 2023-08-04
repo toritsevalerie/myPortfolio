@@ -3,134 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toritse Valerie Web & Design Portfolio</title>
+    <title>Toritse Valerie Developer + Designer</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://kit.fontawesome.com/6f8a15cb49.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="main-background">
-      <div class="website-container">
-        <div class="fixed-side-bar">
-          <div class="fixed-intro-para">
-            <button class="theme-toggle set-light-theme">
-              <i
-                class="fa-solid fa-moon fa-1.5x"
-                title="Click for neutral theme"
-              ></i>
-            </button>
-            <h1>Toritse-Valerie Tuedor</h1>
-            <p class="job-title">
-              Front-End Developer + User Experience Designer
-            </p>
-
-            <p>
-              My name is Toritse-Valerie. I create, build and design digital
-              solutions tailored to improving the quality of peoples lives. My
-              goal is to create delightful user experiences that seamlessly
-              blend aesthetics and functionality
-            </p>
-            <p>
-              I enjoy painting a lot, thats all I do, you can see some stuff
-              here.
-            </p>
-
-            <div class="social-media-icons">
-              <ul>
-                <li>
-                  <a href="https://github.com/toritsevalerie" target="_blank"
-                    ><i class="fa-brands fa-github fa-2x"></i>GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/toritsetuedor/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin fa-2x"></i>LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a href=""><i class="fa-solid fa-envelope fa-2x"></i>Email</a>
-                </li>
-                <li>
-                  <a
-                    href="/assets/ToritseValerieTuedorResume-5.pdf"
-                    target="_blank"
-                    ><i class="fa-solid fa-clipboard fa-2x"></i>Resume</a
-                  >
-                </li>
-                <li>
-                  <a href="/contact.html"
-                    ><i class="fa-solid fa-inbox fa-2x"></i>Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright">
-              <p>Designed & Built by ToritseValerie Tuedor</p>
-            </div>
+    <div class="mainContainer">
+      <div class="websiteContentContainer">
+        <div class="navigationBar">
+          <div class="navIcons">
+            <i class="fa-solid fa-bars fa-2x" style="color: #ffffff"></i>
+            <p class="menuTitle">Menu</p>
           </div>
         </div>
-        <hr class="divider" />
-        <div class="changing-content">
-          <header>
-            <div class="wrapper">
-              <nav>
-                <div class="nav-container">
-                  <ul class="navigation-bar">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/projects.html">PROJECTS</a></li>
-                    <li><a href="/about.html">ABOUT</a></li>
-                    <li><a href="/art.html">ART</a></li>
-                    <li><a href="/contact.html">CONTACT</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </header>
-          <main>
-            <div class="wrapper">
-              <div class="form-contact-container">
-                <form action="" method="POST" name="my-contact-form">
-                  <div class="form-text-container">
-                    <h2 class="form-title">KEEP <span>IN TOUCH</span></h2>
-                    <p>
+        <ul class="hiddenNav">
+          <div class="hiddenNavContent">
+            <p class="closingButton">Close</p>
+            <ul class="navigationItems">
+              <li class="navItem">
+                <a class="homeLink" href="/index.html">Home</a>
+              </li>
+              <li class="navItem">
+                <a class="projectLink" href="/projects.html">Projects</a>
+              </li>
+              <li class="navItem"><a href="/skills.html">Skills</a></li>
+              <li class="navItem"><a href="/about.html">About</a></li>
+            </ul>
+
+            <p>
+              Hi again, My name is Toritse-Valerie and I am a junior Front-End
+              developer and User Experience Designer.
+            </p>
+            <p>
+              I create, build and design digital solutions tailored to improving
+              the quality of peoples lives. Learn more about me
+              <a href="/about.html">here</a>
+            </p>
+            <ul class="contactResume">
+              <li><a href="/contact.html">Contact Me</a></li>
+              <li>
+                <a
+                  href="/assets/ToritseValerieTuedorResume-5.pdf"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </ul>
+        <div class="websiteContent">
+          <div class="wrapper">
+            <div class="contactPage">
+              <div class="formContactContainer">
+                <form action="" method="POST" name="myContactForm">
+                  <div class="formTextContainer">
+                    <h1 class="title">
+                      Would love to hear from you, keep in touch 👋🏾!
+                    </h1>
+                    <p class="introBlurb">
                       Thank you for taking the time to look through my
                       portfolio! If you're interested in staying in touch,
                       connect with me via my socials or leave a message.
                     </p>
                   </div>
-                  <div class="form-container">
-                    <div class="name-email-container">
-                      <div class="name-field">
-                        <label for="user-name">Name</label>
+                  <div class="formContainer">
+                    <div class="nameEmailContainer">
+                      <div class="nameField">
+                        <label for="username">Name</label>
                         <input
                           type="text"
-                          id="user-name"
-                          name="user-name"
+                          id="username"
+                          name="username"
                           required
+                          placeholder="Name"
                         />
                       </div>
-                      <div class="email-field">
-                        <label for="email-address">Email</label>
+                      <div class="emailField">
+                        <label for="emailAddress">Email</label>
                         <input
                           type="text"
-                          id="email-address"
-                          name="email-address"
+                          id="emailAddress"
+                          name="emailaddress"
                           required
+                          placeholder="Email"
                         />
                       </div>
                     </div>
 
-                    <div class="message-field">
+                    <div class="messageField">
                       <label for="message">Message</label>
                       <textarea
                         name="message"
@@ -144,11 +107,44 @@
                   </div>
                 </form>
               </div>
+              <footer>
+                <ul class="footerBar">
+                  <li>
+                    <a href="/contact.html">Contact Me</a>
+                  </li>
+                  <ul class="socialMediaLinks">
+                    <li>
+                      <a
+                        href="https://github.com/toritsevalerie"
+                        target="_blank"
+                        ><i class="fa-brands fa-github fa-2x"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/toritsetuedor/"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin fa-2x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/toritsevalerie"
+                        target="_blank"
+                        ><i class="fa-solid fa-envelope fa-2x"></i
+                      ></a>
+                    </li>
+                    <li></li>
+                  </ul>
+
+                  <li><a href="/assets/ResumeToritseV.pdf">Resume</a></li>
+                </ul>
+              </footer>
             </div>
-          </main>
+          </div>
         </div>
       </div>
     </div>
+    <script type="module" src="/scripts/script.js"></script>
   </body>
-  <script type="module" src="/scripts/script.js"></script>
 </html>
