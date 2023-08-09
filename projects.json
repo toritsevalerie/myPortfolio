@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "projectImg": "https://placebear.com/640/360",
+      "alt": "bear in water holding hand to its face",
+      "title": "Pronia Project ",
+      "tags": "Web Development | UX ",
+      "description": "description goes here",
+      "liveSiteLink": "https://neon-medovik-43961c.netlify.app/",
+      "gitHubLink": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
+      "id": "projectOne"
+    },
+    {
+      "projectImg": "https://placebear.com/640/360",
+      "alt": "bear in water holding hand to its face",
+      "title": "Pronia Project ",
+      "tags": "Web Development | UX ",
+      "description": "description goes here",
+      "liveSiteLink": "https://neon-medovik-43961c.netlify.app/",
+      "gitHubLink": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
+      "id": "projectTwo"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "hi",
+      "email": "hi",
+      "message": "hi"
+    }
+  ]
+}

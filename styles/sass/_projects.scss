@@ -1,0 +1,56 @@
+@import "variables";
+
+.projectPage {
+  .projectsProjectPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 20px 68px;
+
+    .individualProject {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $black;
+      padding: 35px 5px 35px 10px;
+      height: 410px;
+      width: 360px;
+      transition: 0.3s ease 0s;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        padding: 0px 20px 10px 15px;
+        font-weight: 300;
+      }
+      .tags {
+        margin-top: 20px;
+      }
+      .projectButtonContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+        button {
+          border: 1px solid $black;
+          padding: 10px 8px;
+          border-radius: 5px;
+          background-color: $white;
+          &:active {
+            background-color: $brown;
+            color: $white;
+            transform: translateY(2px);
+          }
+        }
+      }
+      &:hover {
+        color: $brown;
+        background-image: none;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

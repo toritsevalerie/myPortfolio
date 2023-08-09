@@ -1,45 +1,97 @@
 @import "variables";
 
+@font-face {
+  font-family: HelveticaTextbook;
+  src: url(/Fonts/HelveticaTextbook.ttf);
+}
+
+@font-face {
+  font-family: HelveticaRounded;
+  src: url(/Fonts/HelveticaRounded.ttf);
+}
+
 html,
 body,
-ul {
+ul,
+button {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: HelveticaRounded;
 }
-.main-background {
-  width: 100vw;
-  height: 100vh;
+h1 {
+  margin: 20px 0px 20px 0px;
+  font-size: 50px;
+}
+h2 {
+  margin: 0px;
+  font-size: 28px;
+}
+p {
+  margin: 0px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer {
+  margin: 100px 0px 30px 0px;
+}
+.tags {
+  font-size: 20px;
+}
+button {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+  letter-spacing: 1.5px;
+}
+
+.introBlurb {
+  font-family: HelveticaTextbook;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 12px;
+}
+.wrapper {
+  max-width: 1340px;
+  width: 100%;
+  padding: 0px 0px 0px 82px;
+}
+.mainContainer {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   background-image: url(/assets/background.svg);
+  background-repeat: repeat;
 }
 
-.website-container {
-  // overflow: auto;
-  position: fixed;
-  width: 95vw;
-  height: 90vh;
+.websiteContentContainer {
   display: flex;
-  border-radius: 38px;
-  border: solid $primarybeige 2px;
-  background: $primarybeige;
+  height: 96vh;
+  width: 1400px;
+  border: 1px solid $black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $white;
+}
+// .websiteContentContainer::-webkit-scrollbar {
+//   width: 80px;
+// }
+
+.websiteContent {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 
-.fixed-side-bar {
-  
-  width: 30%;
-  margin: 10px;
+.homePage,
+.skillsPage,
+.projectPage,
+.contactPage,
+.aboutPage {
   display: flex;
-  align-self: self-start;
-  border-top-left-radius: 38px;
-  border-bottom-left-radius: 38px;
-}
-.changing-content {
-  width: 70%;
-  margin: 10px;
-
-  border-top-right-radius: 38px;
-  border-bottom-right-radius: 38px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

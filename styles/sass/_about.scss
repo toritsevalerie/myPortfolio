@@ -1,0 +1,49 @@
+@import "variables";
+
+.aboutMeContainer {
+  display: flex;
+  margin: 20px 230px;
+  gap: 10px;
+
+  div {
+    border: 1px solid $black;
+    padding: 20px 10px;
+    border-radius: 20px;
+    width: 370px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: HelveticaTextbook;
+
+    p {
+      line-height: 29px;
+      .coloredText {
+        color: #e7410a;
+      }
+
+      .coloredJunoText {
+        color: #e7410a;
+      }
+
+      .italicText {
+        font-style: italic;
+        color: #e7410a;
+      }
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    img {
+      border: 1px solid $black;
+      width: 370px;
+      height: 360px;
+    }
+  }
+}

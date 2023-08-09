@@ -1,0 +1,69 @@
+@import "variables";
+
+.formTextContainer {
+  .title {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .introBlurb {
+    margin: 0px 140px;
+  }
+}
+.formContainer {
+  margin: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  .nameEmailContainer {
+    display: flex;
+    input {
+      width: 428px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $black;
+      
+      &::placeholder { 
+        font-size: 16px;
+      
+      }
+    }
+
+    .emailField,
+    .nameField {
+      display: flex;
+      flex-direction: column;
+    }
+    .nameField {
+      margin-right: 70px;
+    }
+  }
+  label {
+    padding-bottom: 8px;
+  }
+  .messageField {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    textarea {
+      width: 920px;
+      border-radius: 5px;
+      border: 1px solid $black;
+    }
+  }
+  button {
+    margin-top: 30px;
+
+    border-radius: 20px;
+    border: 1px solid #000;
+    background-color: $white;
+    padding: 20px 18px;
+  }
+  button:hover {
+    background-color: #5a9e24;
+    color: $white;
+
+    transform: translateY(-7px);
+  }
+}
