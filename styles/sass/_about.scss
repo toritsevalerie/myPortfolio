@@ -1,8 +1,6 @@
 @import "variables";
 
 .aboutMeContainer {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr 1fr;
   display: flex;
   margin: 20px 230px;
   gap: 10px;
@@ -12,15 +10,40 @@
     padding: 20px 10px;
     border-radius: 20px;
     width: 370px;
-    height: 600px;
-    line-height: 26px;
+    height: 400px;
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 18px;
+    font-family: HelveticaTextbook;
+
+    p {
+      line-height: 29px;
+      .coloredText {
+        color: #e7410a;
+      }
+
+      .coloredJunoText {
+        color: #e7410a;
+      }
+
+      .italicText {
+        font-style: italic;
+        color: #e7410a;
+      }
+    }
   }
-  img {
-    border: 1px solid $black;
-    width: 370px;
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    img {
+      border: 1px solid $black;
+      width: 370px;
+      height: 360px;
+    }
   }
 }

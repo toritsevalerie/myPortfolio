@@ -1,3 +1,4 @@
+
 // Create a variable to hold the navigation bar
 // Add an event listener for the navigation-bar
 // Create a function that on click displays
@@ -7,7 +8,7 @@ const hiddenNav = document.querySelector(".hiddenNav");
 console.log(hiddenNav);
 const closeNav = document.querySelector(".closingButton");
 const navIcons = document.querySelector(".navIcons");
-const hiddenNavContent = document.querySelector(".hiddenNavContent")
+const hiddenNavContent = document.querySelector(".hiddenNavContent");
 
 const openNav = () => {
   hiddenNav.style.width = "420px";
@@ -15,7 +16,6 @@ const openNav = () => {
     navigationMenu.style.zIndex = "1";
     hiddenNav.style.zIndex = "2";
     hiddenNavContent.style.display = "block";
-    
   }, 400);
 };
 const closeHiddenNav = () => {
@@ -27,3 +27,4 @@ const closeHiddenNav = () => {
 
 navigationMenu.addEventListener("click", openNav);
 closeNav.addEventListener("click", closeHiddenNav);
+

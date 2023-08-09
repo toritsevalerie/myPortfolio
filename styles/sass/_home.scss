@@ -48,19 +48,18 @@
             padding: 10px 8px;
             border-radius: 5px;
             background-color: $white;
-            &:active { 
+            &:active {
               background-color: $brown;
               color: $white;
               transform: translateY(2px);
             }
           }
         }
-        
-      }
-      .individualProject:hover {
-        color: $brown;
+        &:hover {
+          color: $brown;
 
-        transform: translateY(-2px);
+          transform: translateY(-2px);
+        }
       }
     }
     .viewAllProjectsButton {
