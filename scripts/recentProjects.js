@@ -18,11 +18,12 @@ const projectRef = ref(database, "/projects");
 get(projectRef).then((snapshot) => {
   const projectData = snapshot.val();
 
-  // Convert projectData object to an array and then reverse it.
-  const projectsArray = Object.values(projectData).reverse();
+  const projectsArray = Object.values(projectData);
+
+  const recentThreeProjects = projectsArray.slice(-3);
 
   //loop through the array to render each array item on the page
-  for (let eachProject of projectsArray) {
+  for (let eachProject of recentThreeProjects) {
     // Storing json data/object items in variables
 
     const projectTitle = eachProject.title;
@@ -40,17 +41,20 @@ get(projectRef).then((snapshot) => {
     projectTagsPElement.className = "tags";
 
     // Creating Div Containers Elements
+
     const singleProjectContainerDiv = document.createElement("div");
     singleProjectContainerDiv.className = "individualProject";
     const projectButtonsDiv = document.createElement("div");
     projectButtonsDiv.className = "projectButtonContainer";
 
     // Creating Button Elements
+
     const liveButton = document.createElement("button");
     const codeButton = document.createElement("button");
     const uxButton = document.createElement("button");
 
     // Creating a elements
+
     const liveLink = document.createElement("a");
     liveLink.href = liveSiteLink;
     const gitCode = document.createElement("a");
@@ -58,6 +62,7 @@ get(projectRef).then((snapshot) => {
     const uxLink = document.createElement("a");
 
     // Assigning values to the elements
+
     projectHeadingElement.innerHTML = projectTitle;
     projectDetailsPElement.innerHTML = projectDescription;
     projectTagsPElement.innerHTML = projectTags;
@@ -69,6 +74,7 @@ get(projectRef).then((snapshot) => {
     uxLink.target = "_blank";
 
     // Appending Items
+
     singleProjectContainerDiv.append(
       projectHeadingElement,
       projectDetailsPElement,
@@ -81,13 +87,12 @@ get(projectRef).then((snapshot) => {
     codeButton.append(gitCode);
     uxButton.append(uxLink);
 
-    const projectsSectionProjectPage = document.querySelector(
-      ".projectsProjectPage"
-    );
+    const recentProjectsHomePage = document.querySelector(".recentProjects");
 
-    projectsSectionProjectPage.append(singleProjectContainerDiv);
+    recentProjectsHomePage.append(singleProjectContainerDiv);
 
     // On Hover backgroundImage shows
+
     singleProjectContainerDiv.addEventListener("mouseenter", () => {
       singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
       singleProjectContainerDiv.style.backgroundSize = "cover";

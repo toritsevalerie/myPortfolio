@@ -522,8 +522,12 @@ button {
   padding: 35px 5px 35px 10px;
   height: 410px;
   width: 360px;
-  -webkit-transition: 0.3s ease 0s;
-  transition: 0.3s ease 0s;
+}
+.websiteContent .homePage .recentProjects .individualProject h2,
+.websiteContent .homePage .recentProjects .individualProject p,
+.websiteContent .homePage .recentProjects .individualProject .tags {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .websiteContent .homePage .recentProjects .individualProject h2 {
   margin-bottom: 20px;
@@ -556,10 +560,15 @@ button {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
+.websiteContent .homePage .recentProjects .individualProject .projectButtonContainer button a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
 .websiteContent .homePage .recentProjects .individualProject:hover {
-  color: #4d2d18;
+  color: #1d1d1d;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  border: none;
 }
 .websiteContent .homePage .viewAllProjectsButton {
   border-radius: 20px;
@@ -600,6 +609,13 @@ button {
 .websiteContent .homePage .viewAllProjectsButton:hover::before {
   width: 100%;
 }
+.websiteContent .homePage .viewAllProjectsButton a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.websiteContent .homePage .viewAllProjectsButton a:hover {
+  color: #fff;
+}
 
 .projectPage .projectsProjectPage {
   display: grid;
@@ -625,8 +641,14 @@ button {
   padding: 35px 5px 35px 10px;
   height: 410px;
   width: 360px;
-  -webkit-transition: 0.3s ease 0s;
-  transition: 0.3s ease 0s;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.projectPage .projectsProjectPage .individualProject h2,
+.projectPage .projectsProjectPage .individualProject p,
+.projectPage .projectsProjectPage .individualProject .tags {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .projectPage .projectsProjectPage .individualProject h2 {
   margin-bottom: 20px;
@@ -656,12 +678,14 @@ button {
 .projectPage .projectsProjectPage .individualProject .projectButtonContainer button:active {
   background-color: #4d2d18;
   color: #ffffff;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+.projectPage .projectsProjectPage .individualProject .projectButtonContainer button a {
+  text-decoration: none;
+  color: #1d1d1d;
 }
 .projectPage .projectsProjectPage .individualProject:hover {
-  color: #4d2d18;
-  background-image: none;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
