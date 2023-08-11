@@ -11,7 +11,7 @@
       "id": "projectOne"
     },
     {
-      "projectImg": "assets/filmIMG.svg",
+      "projectImg": "assets/filmFactoryImg.svg",
       "alt": "bear in water holding hand to its face",
       "title": "The Film Factory",
       "tags": "Web Development | UX ",
@@ -21,7 +21,7 @@
       "id": "projectTwo"
     },
     {
-      "projectImg": "assets/musicIMG.svg",
+      "projectImg": "assets/cmeSoonImg.svg",
       "alt": "bear in water holding hand to its face",
       "title": "Music Scape",
       "tags": "Web Development | UX ",
@@ -31,7 +31,7 @@
       "id": "projectThree"
     },
     {
-      "projectImg": "https://placebear.com/640/360",
+      "projectImg": "assets/comingsoonIMG.svg",
       "alt": "bear in water holding hand to its face",
       "title": "Skinned By Nature",
       "tags": "Web Development | Freelance | Brand/UX Design",
@@ -41,7 +41,7 @@
       "id": "projectFour"
     },
     {
-      "projectImg": "https://placebear.com/640/360",
+      "projectImg": "assets/soonComeImg.svg",
       "alt": "bear in water holding hand to its face",
       "title": "Number Ninjas",
       "tags": "Web Development | UX Design",
