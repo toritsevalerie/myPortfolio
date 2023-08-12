@@ -723,7 +723,6 @@ button {
   color: #1d1d1d;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
-  border: none;
 }
 .websiteContent .homePage .viewAllProjectsButton {
   border-radius: 20px;
