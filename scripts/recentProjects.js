@@ -93,22 +93,76 @@ get(projectRef).then((snapshot) => {
 
     // On Hover backgroundImage shows
 
-    singleProjectContainerDiv.addEventListener("mouseenter", () => {
-      singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
-      singleProjectContainerDiv.style.backgroundSize = "cover";
+   const updateEventListener = () => {
+     const width = window.innerWidth;
+     if (width <= 768) {
+       singleProjectContainerDiv.addEventListener(
+         "click",
+         handleIndividualProjectClick
+       );
+       singleProjectContainerDiv.removeEventListener(
+         "mouseenter",
+         handleMouseEnter
+       );
+       singleProjectContainerDiv.removeEventListener(
+         "mouseleave",
+         handleMouseLeave
+       );
+     } else {
+       singleProjectContainerDiv.addEventListener(
+         "mouseenter",
+         handleMouseEnter
+       );
+       singleProjectContainerDiv.addEventListener(
+         "mouseleave",
+         handleMouseLeave
+       );
+       singleProjectContainerDiv.removeEventListener(
+         "click",
+         handleIndividualProjectClick
+       );
+     }
+   };
 
-      // Hide the h2, p, and .tags elements
-      projectHeadingElement.style.opacity = "0";
-      projectDetailsPElement.style.opacity = "0";
-      projectTagsPElement.style.opacity = "0";
-    });
-    singleProjectContainerDiv.addEventListener("mouseleave", () => {
-      singleProjectContainerDiv.style.backgroundImage = "";
+   window.addEventListener("resize", updateEventListener);
 
-      // Show the h2, p, and .tags elements again
-      projectHeadingElement.style.opacity = "1";
-      projectDetailsPElement.style.opacity = "1";
-      projectTagsPElement.style.opacity = "1";
-    });
+   const handleMouseEnter = () => {
+     singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
+     singleProjectContainerDiv.style.backgroundSize = "contain";
+
+     // Hide the h2, p, and .tags elements
+     projectHeadingElement.style.opacity = "0";
+     projectDetailsPElement.style.opacity = "0";
+     projectTagsPElement.style.opacity = "0";
+   };
+   singleProjectContainerDiv.addEventListener("mouseenter", handleMouseEnter);
+
+   const handleMouseLeave = () => {
+     singleProjectContainerDiv.style.backgroundImage = "";
+
+     // Show the h2, p, and .tags elements again
+     projectHeadingElement.style.opacity = "1";
+     projectDetailsPElement.style.opacity = "1";
+     projectTagsPElement.style.opacity = "1";
+   };
+
+   singleProjectContainerDiv.addEventListener("mouseleave", handleMouseLeave);
+
+   const handleIndividualProjectClick = () => {
+     if (singleProjectContainerDiv.style.backgroundImage) {
+       // If the backgroundImage is set, revert back to the original state
+       singleProjectContainerDiv.style.backgroundImage = "";
+       projectHeadingElement.style.opacity = "1";
+       projectDetailsPElement.style.opacity = "1";
+       projectTagsPElement.style.opacity = "1";
+     } else {
+       // Otherwise, display the image and hide the other elements
+       singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
+       singleProjectContainerDiv.style.backgroundSize = "contain";
+       projectHeadingElement.style.opacity = "0";
+       projectDetailsPElement.style.opacity = "0";
+       projectTagsPElement.style.opacity = "0";
+     }
+   };
   }
 });
