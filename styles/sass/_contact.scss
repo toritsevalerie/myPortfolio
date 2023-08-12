@@ -23,10 +23,9 @@
       height: 40px;
       border-radius: 5px;
       border: 1px solid $black;
-      
-      &::placeholder { 
+
+      &::placeholder {
         font-size: 16px;
-      
       }
     }
 
@@ -65,5 +64,94 @@
     color: $white;
 
     transform: translateY(-7px);
+  }
+}
+
+// Media Queries
+
+@media (max-width: 1140px) {
+  .formContactContainer {
+    .formContainer {
+      margin: 40px 0px;
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .formContainer {
+    .nameEmailContainer input {
+      width: 345px;
+    }
+    .messageField textarea {
+      width: 780px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .formContainer {
+    .nameEmailContainer input {
+      width: 260px;
+    }
+    .messageField textarea {
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 727px) {
+  .formContainer {
+    .nameEmailContainer {
+      .nameField {
+        margin-right: 40px;
+      }
+      input {
+        width: auto;
+      }
+    }
+    .messageField textarea {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .contactPage {
+    .introBlurb {
+      margin: 0px 20px;
+    }
+    .formContainer {
+      .nameEmailContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        .nameField {
+          margin-right: 0px;
+        }
+        input {
+          width: 300px;
+        }
+      }
+      .messageField textarea {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .contactPage {
+    .formContainer {
+      .nameEmailContainer {
+        input {
+          width: 230px;
+        }
+      }
+      .messageField textarea {
+        width: 230px;
+      }
+    }
   }
 }

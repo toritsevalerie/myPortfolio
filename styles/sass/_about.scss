@@ -28,7 +28,6 @@
 
       .italicText {
         font-style: italic;
-        
       }
     }
   }
@@ -41,19 +40,34 @@
 
     img {
       border: 1px solid $black;
-      width: 370px;
+      width: auto;
       height: 360px;
     }
   }
 }
 
+// Media Queries
+
 @media (max-width: 1156px) {
   .aboutMeContainer {
     display: grid;
     grid-template-columns: 1fr;
-
     div {
       border: none;
+    }
+  }
+}
+@media (max-width: 410px) {
+  .aboutMeContainer {
+    .imageContainer img {
+      width: 297px;
+    }
+  }
+}
+@media (max-width: 370px) {
+  .aboutMeContainer {
+    .imageContainer img {
+      width: 250px;
     }
   }
 }

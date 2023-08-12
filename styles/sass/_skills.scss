@@ -19,16 +19,20 @@
   }
 }
 
-// Media Queries 
+// Media Queries
 
 @media (max-width: 1201px) {
-  .skillsPage .skills {
-    grid-template-columns: 1fr 1fr;
+  .skillsPage {
+    .skills {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
 @media (max-width: 520px) {
-  .skillsPage .skills {
-    grid-template-columns: 1fr;
+  .skillsPage {
+    .skills {
+      grid-template-columns: 1fr;
+    }
   }
 }

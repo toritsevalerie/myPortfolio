@@ -126,26 +126,46 @@
 // Media Queries
 
 @media (max-width: 1320px) {
-  .websiteContent .homePage .recentProjects {
-    grid-template-columns: 1fr 1fr;
+  .websiteContent {
+    .homePage {
+      .recentProjects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 }
 
 @media (max-width: 920px) {
-  .websiteContent .homePage .recentProjects {
-    grid-template-columns: 1fr;
+  .websiteContent {
+    .homePage {
+      .recentProjects {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 }
 
 @media (max-width: 905px) {
-  .websiteContent .homePage .recentProjects .individualProject {
-    width: auto;
-    height: auto;
+  .websiteContent {
+    .homePage {
+      .recentProjects {
+        .individualProject {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 734px) {
-  .websiteContent .wrapper .homePage .title {
-    margin-top: 100px;
+  .websiteContent {
+    .wrapper {
+      .homePage {
+        .title {
+          margin-top: 100px;
+        }
+      }
+    }
   }
 }

@@ -529,12 +529,15 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
+  display: none;
 }
 
 .responsiveNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -623,6 +626,22 @@ button {
   }
   .wrapper {
     padding: 0px;
+  }
+  .responsiveNavIcon {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .responsiveNav {
+    width: 300px;
+  }
+  .responsiveNav .responsiveNavContent p {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .responsiveNav {
+    width: 250px;
   }
 }
 .websiteContent {
@@ -936,7 +955,7 @@ button {
 }
 .aboutMeContainer .imageContainer img {
   border: 1px solid #1d1d1d;
-  width: 370px;
+  width: auto;
   height: 360px;
 }
 
@@ -947,6 +966,16 @@ button {
   }
   .aboutMeContainer div {
     border: none;
+  }
+}
+@media (max-width: 410px) {
+  .aboutMeContainer .imageContainer img {
+    width: 297px;
+  }
+}
+@media (max-width: 370px) {
+  .aboutMeContainer .imageContainer img {
+    width: 250px;
   }
 }
 .skillsPage .skillsContainer {
@@ -1119,4 +1148,70 @@ footer {
   color: #ffffff;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+}
+
+@media (max-width: 1140px) {
+  .formContactContainer .formContainer {
+    margin: 40px 0px;
+  }
+}
+@media (max-width: 1068px) {
+  .formContainer .nameEmailContainer input {
+    width: 345px;
+  }
+  .formContainer .messageField textarea {
+    width: 780px;
+  }
+}
+@media (max-width: 920px) {
+  .formContainer .nameEmailContainer input {
+    width: 260px;
+  }
+  .formContainer .messageField textarea {
+    width: 600px;
+  }
+}
+@media (max-width: 727px) {
+  .formContainer .nameEmailContainer .nameField {
+    margin-right: 40px;
+  }
+  .formContainer .nameEmailContainer input {
+    width: auto;
+  }
+  .formContainer .messageField textarea {
+    width: 500px;
+  }
+}
+@media (max-width: 620px) {
+  .contactPage .introBlurb {
+    margin: 0px 20px;
+  }
+  .contactPage .formContainer .nameEmailContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactPage .formContainer .nameEmailContainer .nameField {
+    margin-right: 0px;
+  }
+  .contactPage .formContainer .nameEmailContainer input {
+    width: 300px;
+  }
+  .contactPage .formContainer .messageField textarea {
+    width: 300px;
+  }
+}
+@media (max-width: 360px) {
+  .contactPage .formContainer .nameEmailContainer input {
+    width: 230px;
+  }
+  .contactPage .formContainer .messageField textarea {
+    width: 230px;
+  }
 }
