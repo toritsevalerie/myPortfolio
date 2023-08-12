@@ -1,4 +1,3 @@
-
 // Create a variable to hold the navigation bar
 // Add an event listener for the navigation-bar
 // Create a function that on click displays
@@ -28,3 +27,20 @@ const closeHiddenNav = () => {
 navigationMenu.addEventListener("click", openNav);
 closeNav.addEventListener("click", closeHiddenNav);
 
+// Responsive Nav
+const responsiveNavIcon = document.querySelector(".responsiveNavIcon");
+const responsiveNav = document.querySelector(".responsiveNav");
+const closeResponsiveNav = document.querySelector(
+  ".responsiveNavClosingButton"
+);
+
+const handleResponsiveNavFunction = () => {
+  responsiveNav.style.display = "block";
+};
+
+const handleCloseResponsiveNav = () => {
+  responsiveNav.style.display = "none";
+};
+
+responsiveNavIcon.addEventListener("click", handleResponsiveNavFunction);
+closeResponsiveNav.addEventListener("click", handleCloseResponsiveNav);

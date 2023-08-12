@@ -90,7 +90,7 @@ get(projectRef).then((snapshot) => {
     // On Hover backgroundImage shows
     singleProjectContainerDiv.addEventListener("mouseenter", () => {
       singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
-      singleProjectContainerDiv.style.backgroundSize = "cover";
+      singleProjectContainerDiv.style.backgroundSize = "contain";
 
       // Hide the h2, p, and .tags elements
       projectHeadingElement.style.opacity = "0";

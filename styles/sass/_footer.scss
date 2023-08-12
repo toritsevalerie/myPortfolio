@@ -33,3 +33,12 @@ footer {
     color: $black;
   }
 }
+
+
+// Media Queries
+
+@media (max-width: 704px) {
+  .footerBar { 
+    grid-template-columns: 1fr;
+  }
+}
