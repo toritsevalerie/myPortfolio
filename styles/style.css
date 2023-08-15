@@ -348,7 +348,6 @@ button {
   width: 1400px;
   border: 1px solid #1d1d1d;
   padding: 20px;
-  border-radius: 10px;
   background-color: #ffffff;
 }
 
@@ -748,7 +747,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
-  margin: 45px 0px;
+  margin: 40px 0px;
 }
 .websiteContent .homePage .recentProjects .individualProject {
   display: -webkit-box;

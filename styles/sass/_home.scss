@@ -14,7 +14,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
-      margin: 45px 0px;
+      margin: 40px 0px;
 
       .individualProject {
         display: flex;
@@ -22,6 +22,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid $black;
+        
         padding: 35px 5px 35px 10px;
         height: 410px;
         width: 360px;
