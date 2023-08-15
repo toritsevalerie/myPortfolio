@@ -1,0 +1,56 @@
+@import "variables";
+
+.skinnedByNatureCaseStudyPage {
+  p,
+  li {
+    text-align: left;
+    font-family: HelveticaTextbook;
+    line-height: 32px;
+  }
+  h1 {
+    text-align: left;
+  }
+  .caseStudyLayout {
+    padding: 0px 124px;
+    .headerImageContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .introCaseStudyDetails {
+    margin-top: 30px;
+    button {
+      border: none;
+      background-color: $brown;
+      border-radius: 10px;
+      border: 1px solid #000;
+      padding: 16px 18px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    .projectOverviewSection {
+      margin: 60px 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      h3 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .projectOverviewContainer {
+    background-color: aqua;
+    text-align: center;
+    padding: 30px 40px;
+    li {
+      text-align: center;
+      list-style: none;
+    }
+  }
+  .goalContainer {
+    margin-top: 20px;
+  }
+}

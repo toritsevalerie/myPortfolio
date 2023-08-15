@@ -70,7 +70,14 @@
         }
       }
     }
+    .instructionPara { 
+      margin-top: 20px;
+      font-style: italic;
+      font-family: HelveticaTextbook;
+      font-size: 14px;
+    }
     .viewAllProjectsButton {
+      margin-top: 30px;
       border-radius: 20px;
       border: 1px solid #000;
       background-color: $white;
