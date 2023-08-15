@@ -2,6 +2,9 @@
 
 footer {
   margin: 100px 0px 30px;
+  p {
+    margin-top: 20px;
+  }
 }
 .footerBar {
   display: grid;
@@ -34,11 +37,11 @@ footer {
   }
 }
 
-
 // Media Queries
 
 @media (max-width: 704px) {
-  .footerBar { 
+  .footerBar {
     grid-template-columns: 1fr;
+    gap: 62px;
   }
 }
