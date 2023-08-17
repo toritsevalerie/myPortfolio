@@ -409,6 +409,10 @@ button {
     overflow-y: hidden;
     height: 100vh;
   }
+  .websiteContentContainer {
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
 }
 @media (max-width: 1355px) {
   .mainContainer {
@@ -420,6 +424,8 @@ button {
 @media (max-width: 1330px) {
   .websiteContentContainer {
     height: 98vh;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   }
 }
 @media (max-width: 910px) {
@@ -442,65 +448,6 @@ button {
             flex-direction: column;
   }
 }
-.skinnedByNatureCaseStudyPage p,
-.skinnedByNatureCaseStudyPage li {
-  text-align: left;
-  font-family: HelveticaTextbook;
-  line-height: 32px;
-}
-.skinnedByNatureCaseStudyPage h1 {
-  text-align: left;
-}
-.skinnedByNatureCaseStudyPage .caseStudyLayout {
-  padding: 0px 124px;
-}
-.skinnedByNatureCaseStudyPage .caseStudyLayout .headerImageContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.skinnedByNatureCaseStudyPage .introCaseStudyDetails {
-  margin-top: 30px;
-}
-.skinnedByNatureCaseStudyPage .introCaseStudyDetails button {
-  border: none;
-  background-color: #4d2d18;
-  border-radius: 10px;
-  border: 1px solid #000;
-  padding: 16px 18px;
-}
-.skinnedByNatureCaseStudyPage .introCaseStudyDetails button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.skinnedByNatureCaseStudyPage .introCaseStudyDetails .projectOverviewSection {
-  margin: 60px 0px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.skinnedByNatureCaseStudyPage .introCaseStudyDetails .projectOverviewSection h3 {
-  margin-bottom: 5px;
-}
-.skinnedByNatureCaseStudyPage .projectOverviewContainer {
-  background-color: aqua;
-  text-align: center;
-  padding: 30px 40px;
-}
-.skinnedByNatureCaseStudyPage .projectOverviewContainer li {
-  text-align: center;
-  list-style: none;
-}
-.skinnedByNatureCaseStudyPage .goalContainer {
-  margin-top: 20px;
-}
-
 .navigationBar {
   background-color: #1d1d1d;
   cursor: pointer;

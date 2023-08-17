@@ -120,6 +120,7 @@ get(projectRef).then((snapshot) => {
       }
     };
 
+    
     window.addEventListener("resize", updateEventListener);
 
     const handleMouseEnter = () => {
