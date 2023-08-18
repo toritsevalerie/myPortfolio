@@ -417,7 +417,6 @@ button {
 @media (max-width: 1355px) {
   .mainContainer {
     background-image: none;
-    background-color: #5a9e24;
     height: 100vh;
   }
 }
@@ -436,7 +435,7 @@ button {
 }
 @media (max-width: 734px) {
   h1 {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .websiteContentContainer {
     display: -webkit-box;
@@ -712,7 +711,7 @@ button {
           align-items: center;
   border: 1px solid #1d1d1d;
   padding: 35px 5px 35px 10px;
-  height: 410px;
+  height: auto;
   width: 360px;
 }
 .websiteContent .homePage .recentProjects .individualProject h2,
@@ -727,17 +726,26 @@ button {
 .websiteContent .homePage .recentProjects .individualProject p {
   padding: 0px 20px 10px 15px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 .websiteContent .homePage .recentProjects .individualProject .tags {
   margin-top: 20px;
 }
+.websiteContent .homePage .recentProjects .individualProject .tagContainer li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 4px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
 .websiteContent .homePage .recentProjects .individualProject .projectButtonContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 15px;
   margin-top: 15px;
 }
 .websiteContent .homePage .recentProjects .individualProject .projectButtonContainer button {
@@ -833,7 +841,7 @@ button {
 }
 @media (max-width: 734px) {
   .websiteContent .wrapper .homePage .title {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 .projectPage .projectsProjectPage {
@@ -858,7 +866,7 @@ button {
           align-items: center;
   border: 1px solid #1d1d1d;
   padding: 35px 5px 35px 10px;
-  height: 410px;
+  height: auto;
   width: 360px;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
@@ -876,17 +884,26 @@ button {
 .projectPage .projectsProjectPage .individualProject p {
   padding: 0px 20px 10px 15px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 .projectPage .projectsProjectPage .individualProject .tags {
   margin-top: 20px;
 }
+.projectPage .projectsProjectPage .individualProject .tagContainer li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 4px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
 .projectPage .projectsProjectPage .individualProject .projectButtonContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 15px;
   margin-top: 15px;
 }
 .projectPage .projectsProjectPage .individualProject .projectButtonContainer button {
