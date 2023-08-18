@@ -24,7 +24,7 @@
         border: 1px solid $black;
         
         padding: 35px 5px 35px 10px;
-        height: 410px;
+        height: auto;
         width: 360px;
 
         h2,
@@ -39,15 +39,26 @@
         p {
           padding: 0px 20px 10px 15px;
           font-weight: 300;
+          margin-bottom: 10px;
         }
         .tags {
           margin-top: 20px;
         }
+        .tagContainer { 
+          li { 
+            list-style: none;
+            text-align: center;
+            border: 1px solid black;
+            padding: 4px 20px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+          }
+        }
         .projectButtonContainer {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
           justify-content: center;
-          gap: 10px;
+          gap: 15px;
           margin-top: 15px;
           button {
             border: 1px solid $black;
@@ -170,7 +181,7 @@
     .wrapper {
       .homePage {
         .title {
-          margin-top: 100px;
+          margin-top: 60px;
         }
       }
     }

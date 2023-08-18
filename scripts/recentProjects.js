@@ -28,64 +28,69 @@ get(projectRef).then((snapshot) => {
 
     const projectTitle = eachProject.title;
     const projectDescription = eachProject.description;
-    const projectTags = eachProject.tags;
+    const projectWeb = eachProject.webTags;
+    const projectProduct = eachProject.designTags;
+    const projectFreelance = eachProject.freelanceTags;
     const githubLink = eachProject.gitHubLink;
     const liveSiteLink = eachProject.liveSiteLink;
     const projectImage = eachProject.projectImg;
-    const projectImageAlt = eachProject.alt;
 
-    // Creating P & H2 Elements
+    // Creating P & H2 & li Elements
     const projectHeadingElement = document.createElement("h2");
     const projectDetailsPElement = document.createElement("p");
-    const projectTagsPElement = document.createElement("p");
-    projectTagsPElement.className = "tags";
+    const webTagLiElement = document.createElement("li");
+    const productTagLiElement = document.createElement("li");
+    const freelanceTagLiElement = document.createElement("li");
 
     // Creating Div Containers Elements
-
     const singleProjectContainerDiv = document.createElement("div");
     singleProjectContainerDiv.className = "individualProject";
     const projectButtonsDiv = document.createElement("div");
     projectButtonsDiv.className = "projectButtonContainer";
 
     // Creating Button Elements
-
     const liveButton = document.createElement("button");
     const codeButton = document.createElement("button");
-    const uxButton = document.createElement("button");
+
+    //Creating Ul element
+
+    const tagContainer = document.createElement("ul");
+    tagContainer.className = "tagContainer";
 
     // Creating a elements
-
     const liveLink = document.createElement("a");
     liveLink.href = liveSiteLink;
     const gitCode = document.createElement("a");
     gitCode.href = githubLink;
-    const uxLink = document.createElement("a");
 
     // Assigning values to the elements
-
     projectHeadingElement.innerHTML = projectTitle;
     projectDetailsPElement.innerHTML = projectDescription;
-    projectTagsPElement.innerHTML = projectTags;
+    freelanceTagLiElement.innerHTML = projectFreelance;
+    webTagLiElement.innerHTML = projectWeb;
+    productTagLiElement.innerHTML = projectProduct;
     liveLink.innerHTML = "Live Site";
     liveLink.target = "_blank";
     gitCode.innerHTML = "GitHub";
     gitCode.target = "_blank";
-    uxLink.innerHTML = "Case Study";
-    uxLink.target = "_blank";
 
     // Appending Items
-
     singleProjectContainerDiv.append(
       projectHeadingElement,
       projectDetailsPElement,
-      projectTagsPElement,
+      tagContainer,
       projectButtonsDiv
     );
 
-    projectButtonsDiv.append(liveButton, codeButton, uxButton);
+    projectButtonsDiv.append(liveButton, codeButton);
     liveButton.append(liveLink);
     codeButton.append(gitCode);
-    uxButton.append(uxLink);
+
+    tagContainer.append(
+      productTagLiElement,
+      freelanceTagLiElement,
+      webTagLiElement
+    );
 
     const recentProjectsHomePage = document.querySelector(".recentProjects");
 
@@ -93,76 +98,30 @@ get(projectRef).then((snapshot) => {
 
     // On Hover backgroundImage shows
 
-   const updateEventListener = () => {
-     const width = window.innerWidth;
-     if (width <= 768) {
-       singleProjectContainerDiv.addEventListener(
-         "click",
-         handleIndividualProjectClick
-       );
-       singleProjectContainerDiv.removeEventListener(
-         "mouseenter",
-         handleMouseEnter
-       );
-       singleProjectContainerDiv.removeEventListener(
-         "mouseleave",
-         handleMouseLeave
-       );
-     } else {
-       singleProjectContainerDiv.addEventListener(
-         "mouseenter",
-         handleMouseEnter
-       );
-       singleProjectContainerDiv.addEventListener(
-         "mouseleave",
-         handleMouseLeave
-       );
-       singleProjectContainerDiv.removeEventListener(
-         "click",
-         handleIndividualProjectClick
-       );
-     }
-   };
+    const handleMouseEnter = () => {
+      singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
+      singleProjectContainerDiv.style.backgroundSize = "contain";
 
-   window.addEventListener("resize", updateEventListener);
+      // Hide the h2, p, and .tags elements
+      projectHeadingElement.style.opacity = "0";
+      projectDetailsPElement.style.opacity = "0";
+      productTagLiElement.style.opacity = "0";
+      freelanceTagLiElement.style.opacity = "0";
+      webTagLiElement.style.opacity = "0";
+    };
+    singleProjectContainerDiv.addEventListener("mouseenter", handleMouseEnter);
 
-   const handleMouseEnter = () => {
-     singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
-     singleProjectContainerDiv.style.backgroundSize = "contain";
+    const handleMouseLeave = () => {
+      singleProjectContainerDiv.style.backgroundImage = "";
 
-     // Hide the h2, p, and .tags elements
-     projectHeadingElement.style.opacity = "0";
-     projectDetailsPElement.style.opacity = "0";
-     projectTagsPElement.style.opacity = "0";
-   };
-   singleProjectContainerDiv.addEventListener("mouseenter", handleMouseEnter);
+      // Show the h2, p, and .tags elements again
+      projectHeadingElement.style.opacity = "1";
+      projectDetailsPElement.style.opacity = "1";
+      productTagLiElement.style.opacity = "1";
+      freelanceTagLiElement.style.opacity = "1";
+      webTagLiElement.style.opacity = "1";
+    };
 
-   const handleMouseLeave = () => {
-     singleProjectContainerDiv.style.backgroundImage = "";
-
-     // Show the h2, p, and .tags elements again
-     projectHeadingElement.style.opacity = "1";
-     projectDetailsPElement.style.opacity = "1";
-     projectTagsPElement.style.opacity = "1";
-   };
-
-   singleProjectContainerDiv.addEventListener("mouseleave", handleMouseLeave);
-
-   const handleIndividualProjectClick = () => {
-     if (singleProjectContainerDiv.style.backgroundImage) {
-       // If the backgroundImage is set, revert back to the original state
-       singleProjectContainerDiv.style.backgroundImage = "";
-       projectHeadingElement.style.opacity = "1";
-       projectDetailsPElement.style.opacity = "1";
-       projectTagsPElement.style.opacity = "1";
-     } else {
-       // Otherwise, display the image and hide the other elements
-       singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
-       singleProjectContainerDiv.style.backgroundSize = "contain";
-       projectHeadingElement.style.opacity = "0";
-       projectDetailsPElement.style.opacity = "0";
-       projectTagsPElement.style.opacity = "0";
-     }
-   };
+    singleProjectContainerDiv.addEventListener("mouseleave", handleMouseLeave);
   }
 });
