@@ -22,7 +22,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid $black;
-        
+
         padding: 35px 5px 35px 10px;
         height: auto;
         width: 360px;
@@ -44,8 +44,8 @@
         .tags {
           margin-top: 20px;
         }
-        .tagContainer { 
-          li { 
+        .tagContainer {
+          li {
             list-style: none;
             text-align: center;
             border: 1px solid black;
@@ -53,6 +53,9 @@
             margin-bottom: 10px;
             border-radius: 20px;
           }
+        }
+        .mobileImage {
+          display: none;
         }
         .projectButtonContainer {
           display: grid;
@@ -82,7 +85,7 @@
         }
       }
     }
-    .instructionPara { 
+    .instructionPara {
       margin-top: 20px;
       font-style: italic;
       font-family: HelveticaTextbook;
@@ -176,12 +179,45 @@
   }
 }
 
+@media (max-width: 768px) {
+  .websiteContent {
+    .wrapper {
+      .homePage {
+        .recentProjects {
+          .individualProject {
+            .mobileImage {
+              display: block;
+              border-radius: 5px;
+              margin: 10px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 734px) {
   .websiteContent {
     .wrapper {
       .homePage {
         .title {
           margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 373px) {
+  .websiteContent {
+    .wrapper {
+      .homePage {
+        .recentProjects {
+          .individualProject {
+            .mobileImage {
+              width: 200px;
+            }
+          }
         }
       }
     }
