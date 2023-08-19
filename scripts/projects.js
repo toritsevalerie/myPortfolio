@@ -33,6 +33,8 @@ get(projectRef).then((snapshot) => {
     const githubLink = eachProject.gitHubLink;
     const liveSiteLink = eachProject.liveSiteLink;
     const projectImage = eachProject.projectImg;
+    const mobileProjectImage = eachProject.mobileImgOne;
+    const mobileProjectImageAlt = eachProject.mobileImgOneAlt;
 
     // Creating P & H2 & li Elements
     const projectHeadingElement = document.createElement("h2");
@@ -46,6 +48,10 @@ get(projectRef).then((snapshot) => {
     singleProjectContainerDiv.className = "individualProject";
     const projectButtonsDiv = document.createElement("div");
     projectButtonsDiv.className = "projectButtonContainer";
+    const mobileImageContainerDiv = document.createElement("div");
+    mobileImageContainerDiv.className = "mobileImageContainer";
+    const mobileImage = document.createElement("img");
+    mobileImage.className = "mobileImage";
 
     // Creating Button Elements
     const liveButton = document.createElement("button");
@@ -73,11 +79,15 @@ get(projectRef).then((snapshot) => {
     gitCode.innerHTML = "GitHub";
     gitCode.target = "_blank";
 
+    mobileImage.src = mobileProjectImage;
+    mobileImage.alt = mobileProjectImageAlt;
+
     // Appending Items
     singleProjectContainerDiv.append(
       projectHeadingElement,
       projectDetailsPElement,
       tagContainer,
+      mobileImageContainerDiv,
       projectButtonsDiv
     );
 
@@ -91,6 +101,9 @@ get(projectRef).then((snapshot) => {
       webTagLiElement
     );
 
+    mobileImageContainerDiv.append(mobileImage);
+    
+
     const projectsSectionProjectPage = document.querySelector(
       ".projectsProjectPage"
     );
@@ -100,27 +113,34 @@ get(projectRef).then((snapshot) => {
     // On Hover backgroundImage shows
 
     const handleMouseEnter = () => {
-      singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
-      singleProjectContainerDiv.style.backgroundSize = "contain";
+      if (window.innerWidth > 768) {
+        // Check for screen width
+        singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
+        singleProjectContainerDiv.style.backgroundSize = "contain";
 
-      // Hide the h2, p, and .tags elements
-      projectHeadingElement.style.opacity = "0";
-      projectDetailsPElement.style.opacity = "0";
-      productTagLiElement.style.opacity = "0";
-      freelanceTagLiElement.style.opacity = "0";
-      webTagLiElement.style.opacity = "0";
+        // Hide the h2, p, and .tags elements
+        projectHeadingElement.style.opacity = "0";
+        projectDetailsPElement.style.opacity = "0";
+        productTagLiElement.style.opacity = "0";
+        freelanceTagLiElement.style.opacity = "0";
+        webTagLiElement.style.opacity = "0";
+      }
     };
+
     singleProjectContainerDiv.addEventListener("mouseenter", handleMouseEnter);
 
     const handleMouseLeave = () => {
-      singleProjectContainerDiv.style.backgroundImage = "";
+      if (window.innerWidth > 768) {
+        // Check for screen width
+        singleProjectContainerDiv.style.backgroundImage = "";
 
-      // Show the h2, p, and .tags elements again
-      projectHeadingElement.style.opacity = "1";
-      projectDetailsPElement.style.opacity = "1";
-      productTagLiElement.style.opacity = "1";
-      freelanceTagLiElement.style.opacity = "1";
-      webTagLiElement.style.opacity = "1";
+        // Show the h2, p, and .tags elements again
+        projectHeadingElement.style.opacity = "1";
+        projectDetailsPElement.style.opacity = "1";
+        productTagLiElement.style.opacity = "1";
+        freelanceTagLiElement.style.opacity = "1";
+        webTagLiElement.style.opacity = "1";
+      }
     };
 
     singleProjectContainerDiv.addEventListener("mouseleave", handleMouseLeave);

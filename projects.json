@@ -10,7 +10,9 @@
       "description": "My first Juno Bootcamp Project. An e-commerce plant website created using HTML, CSS, SASS, JAVASCRIPT & FIREBASE. The site merges interactive design with functionality. Leveraging the capabilities of JAVASCRIPT and backed by FIREBASE's robustness, it revolutionizes online plant shopping",
       "liveSiteLink": "https://neon-medovik-43961c.netlify.app/",
       "gitHubLink": "https://github.com/Project-2-Group-Work/toritse-mohammed-pronia-project-2",
-      "id": "projectOne"
+      "id": "projectOne",
+      "mobileImgOne": "assets/ProniaMobile.svg",
+      "mobileImgOneAlt": "pronia project webpage image"
     },
     {
       "projectImg": "assets/filmfactoryImg.svg",
@@ -22,7 +24,9 @@
       "description": "A collaborative React app made with other developers, for exploring foreign films. It offers a unique platform for movie enthusiasts. Users can search by referencing their favorite titles. They can also save their searches and top picks for future viewing. Made using React, JSX, CSS & FIREBASE",
       "liveSiteLink": "https://ftw-project-four.netlify.app/",
       "gitHubLink": "https://github.com/francella-toritse-wilson/the-film-factory",
-      "id": "projectTwo"
+      "id": "projectTwo",
+      "mobileImgOne": "assets/ffmobile.svg",
+      "mobileImgOneAlt": "film facory project webpage image"
     },
     {
       "projectImg": "assets/cmeSoonImg.svg",
@@ -34,7 +38,9 @@
       "description": "Developed with React, our app lets users dive into a world of music events. It's designed for discovery, exploration, and active engagement. Incorporating user authentication ensures a tailored experience. Dive in and enjoy a unique musical journey. Try it out! Made using React, JSX, CSS & FIREBASE",
       "liveSiteLink": "https://music-scape-app-main.netlify.app/",
       "gitHubLink": "https://github.com/toritsevalerie/Music-Scape-App",
-      "id": "projectThree"
+      "id": "projectThree",
+      "mobileImgOne": "assets/SoonMobile.svg",
+      "mobileImgOneAlt": "coming soon webpage image"
     },
     {
       "projectImg": "assets/cmeSoonImg.svg",
@@ -46,7 +52,9 @@
       "description": "A startup skincare brand located in London, England. V1 launch of their re-designed website (still in development). This website allows users to discover, customize, and order skincare products tailored to individual preferences. Give it a try! Incorperates HTML, CSS & Vanilla JS, API's & more!",
       "liveSiteLink": "https://skinned-by-nature.netlify.app/",
       "gitHubLink": "https://github.com/toritsevalerie/SkinnedByNature",
-      "id": "projectFour"
+      "id": "projectFour",
+      "mobileImgOne": "assets/SoonMobile.svg",
+      "mobileImgOneAlt": "coming soon webpage image"
     },
     {
       "projectImg": "assets/cmeSoonImg.svg",
@@ -58,7 +66,9 @@
       "description": "A React app that transforms math into a delightful experience. Specifically designed for young learners, this platform emphasizes the core principles of addition and subtraction. It ensures a strong foundation in early arithmetic. Dive in with your tiny math ninja. Explore now!",
       "liveSiteLink": "https://number-ninjas.netlify.app/",
       "gitHubLink": "https://github.com/toritsevalerie/numberNinjas",
-      "id": "projectFive"
+      "id": "projectFive",
+      "mobileImgOne": "assets/SoonMobile.svg",
+      "mobileImgOneAlt": "coming soon webpage image"
     },
     {
       "projectImg": "assets/lgwImg.svg",
@@ -70,7 +80,9 @@
       "description": "A creative studio located in Toronto, Ontario. V1 launch of their first website, built with Next.js, Tailwind & Contentful, the platform offers users a glimpse into their diverse projects, an opportunity to register for events, and a window to stay in sync with the team's latest updates. Explore now!",
       "liveSiteLink": "",
       "gitHubLink": "https://github.com/toritsevalerie/localGlobalWorld",
-      "id": "projectSix"
+      "id": "projectSix",
+      "mobileImgOne": "assets/localGlobalMobile.svg",
+      "mobileImgOneAlt": "local global webpage image"
     }
   ],
   "contacts": [
