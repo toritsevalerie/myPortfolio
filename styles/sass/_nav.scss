@@ -186,7 +186,7 @@
 
 // Media Queries
 
-@media (max-width: 734px) {
+@media (max-width: 835px) {
   .navigationBar,
   .hiddenNav {
     display: none;
@@ -208,11 +208,6 @@
   }
 }
 
-@media (max-width: 400px) {
-  .responsiveNavIcon {
-    padding-top: 20px;
-  }
-}
 
 @media (max-width: 380px) {
   .responsiveNav {

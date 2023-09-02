@@ -190,6 +190,60 @@ button {
   }
 }
 
+
+@media (max-width: 835px) {
+  .mainContainer {
+    height: 100%;
+    background:
+    /* Top - E7410A, FFDD55 repeating (left to right) */
+    repeating-linear-gradient(
+        to right,
+        #e7410a 0%,
+        #e7410a 25.8%,    /* Doubled the segment size */
+        #ffdd55 25.8%,    /* Doubled the segment size */
+        #ffdd55 50%       /* Doubled the segment size */
+      )
+      0 0/100% 20px no-repeat,
+    /* Right - black, 5A9E24 repeating (top to bottom) */
+      repeating-linear-gradient(
+        to bottom,
+        black 0%,
+        black 4%,        
+        #5a9e24 4%,      
+        #5a9e24 8%       
+      )
+      100% 0/22px 100% no-repeat,
+    /* Bottom - 565CEF, FFDD55 repeating (left to right) */
+      repeating-linear-gradient(
+        to right,
+        #565cef 0%,
+        #565cef 25.8%,   /* Doubled the segment size */
+        #ffdd55 25.8%,   /* Doubled the segment size */
+        #ffdd55 50%      /* Doubled the segment size */
+      )
+      0 100%/100% 20px no-repeat,
+    /* Left - black, EDEF7C repeating (top to bottom) */
+      repeating-linear-gradient(
+        to bottom,
+        black 0%,
+        black 4%,        
+        #edef7c 4%,      
+        #edef7c 8%       
+      )
+      0 0/22px 100% no-repeat;
+
+background-repeat: no-repeat;
+background-color: black;
+
+
+    .websiteContentContainer {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+}
+
 @media (max-width: 734px) {
   h1 {
     margin-top: 60px;
@@ -200,16 +254,5 @@ button {
   }
 }
 
-@media (max-width: 400px) {
-  h1 {
-    margin-top: 60px;
-  }
-  .mainContainer {
-    height: 90vh;
-    .websiteContentContainer {
-      display: flex;
-      flex-direction: column;
-      height: 98vh;
-    }
-  }
-}
+
+
