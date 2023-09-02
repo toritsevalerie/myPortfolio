@@ -338,6 +338,7 @@ button {
   padding: 20px;
   background: repeating-linear-gradient(to right, #e7410a 0%, #e7410a 12.9%, #ffdd55 12.9%, #ffdd55 25%) 0 0/100% 18px no-repeat, repeating-linear-gradient(to bottom, black 0%, black 12.9%, #5a9e24 12.9%, #5a9e24 25%) 100% 0/20px 100% no-repeat, repeating-linear-gradient(to right, #565cef 0%, #565cef 12.9%, #ffdd55 12.9%, #ffdd55 25%) 0 100%/100% 18px no-repeat, repeating-linear-gradient(to bottom, black 0%, black 12.9%, #edef7c 12.9%, #edef7c 25%) 0 0/20px 100% no-repeat;
   background-repeat: no-repeat;
+  background-color: black;
 }
 
 .websiteContentContainer {

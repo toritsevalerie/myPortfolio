@@ -100,7 +100,9 @@ button {
         #edef7c 25%
       )
       0 0/20px 100% no-repeat;
+
   background-repeat: no-repeat;
+  background-color: black;
 }
 
 .websiteContentContainer {
@@ -192,6 +194,7 @@ button {
   h1 {
     margin-top: 60px;
   }
+
   .websiteContentContainer {
     display: flex;
     flex-direction: column;
