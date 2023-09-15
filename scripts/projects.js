@@ -39,9 +39,9 @@ get(projectRef).then((snapshot) => {
     // Creating P & H2 & li Elements
     const projectHeadingElement = document.createElement("h2");
     const projectDetailsPElement = document.createElement("p");
-    const webTagLiElement = document.createElement("li");
-    const productTagLiElement = document.createElement("li");
-    const freelanceTagLiElement = document.createElement("li");
+    // const webTagLiElement = document.createElement("li");
+    // const productTagLiElement = document.createElement("li");
+    // const freelanceTagLiElement = document.createElement("li");
 
     // Creating Div Containers Elements
     const singleProjectContainerDiv = document.createElement("div");
@@ -69,11 +69,37 @@ get(projectRef).then((snapshot) => {
     gitCode.href = githubLink;
 
     // Assigning values to the elements
+
+    let webTagLiElement;
+    let productTagLiElement;
+    let freelanceTagLiElement;
+
+    if (projectWeb.trim()) {
+      // Check if projectWeb is not empty or just whitespace
+      webTagLiElement = document.createElement("li");
+      webTagLiElement.innerHTML = projectWeb;
+      tagContainer.append(webTagLiElement);
+    }
+
+    if (projectProduct.trim()) {
+      // Check if projectProduct is not empty or just whitespace
+      productTagLiElement = document.createElement("li");
+      productTagLiElement.innerHTML = projectProduct;
+      tagContainer.append(productTagLiElement);
+    }
+
+    if (projectFreelance.trim()) {
+      // Check if projectFreelance is not empty or just whitespace
+      freelanceTagLiElement = document.createElement("li");
+      freelanceTagLiElement.innerHTML = projectFreelance;
+      tagContainer.append(freelanceTagLiElement);
+    }
+
     projectHeadingElement.innerHTML = projectTitle;
     projectDetailsPElement.innerHTML = projectDescription;
-    freelanceTagLiElement.innerHTML = projectFreelance;
-    webTagLiElement.innerHTML = projectWeb;
-    productTagLiElement.innerHTML = projectProduct;
+    // freelanceTagLiElement.innerHTML = projectFreelance;
+    // webTagLiElement.innerHTML = projectWeb;
+    // productTagLiElement.innerHTML = projectProduct;
     liveLink.innerHTML = "Live Site";
     liveLink.target = "_blank";
     gitCode.innerHTML = "GitHub";
@@ -95,14 +121,13 @@ get(projectRef).then((snapshot) => {
     liveButton.append(liveLink);
     codeButton.append(gitCode);
 
-    tagContainer.append(
-      productTagLiElement,
-      freelanceTagLiElement,
-      webTagLiElement
-    );
+    // tagContainer.append(
+    //   productTagLiElement,
+    //   freelanceTagLiElement,
+    //   webTagLiElement
+    // );
 
     mobileImageContainerDiv.append(mobileImage);
-    
 
     const projectsSectionProjectPage = document.querySelector(
       ".projectsProjectPage"
@@ -121,9 +146,9 @@ get(projectRef).then((snapshot) => {
         // Hide the h2, p, and .tags elements
         projectHeadingElement.style.opacity = "0";
         projectDetailsPElement.style.opacity = "0";
-        productTagLiElement.style.opacity = "0";
-        freelanceTagLiElement.style.opacity = "0";
-        webTagLiElement.style.opacity = "0";
+        if (projectWeb.trim()) webTagLiElement.style.opacity = "0";
+        if (projectProduct.trim()) productTagLiElement.style.opacity = "0";
+        if (projectFreelance.trim()) freelanceTagLiElement.style.opacity = "0";
       }
     };
 
@@ -137,9 +162,9 @@ get(projectRef).then((snapshot) => {
         // Show the h2, p, and .tags elements again
         projectHeadingElement.style.opacity = "1";
         projectDetailsPElement.style.opacity = "1";
-        productTagLiElement.style.opacity = "1";
-        freelanceTagLiElement.style.opacity = "1";
-        webTagLiElement.style.opacity = "1";
+        if (projectWeb.trim()) webTagLiElement.style.opacity = "1";
+        if (projectProduct.trim()) productTagLiElement.style.opacity = "1";
+        if (projectFreelance.trim()) freelanceTagLiElement.style.opacity = "1";
       }
     };
 

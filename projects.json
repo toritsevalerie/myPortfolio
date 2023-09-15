@@ -83,6 +83,20 @@
       "id": "projectSix",
       "mobileImgOne": "assets/localGlobalMobile.svg",
       "mobileImgOneAlt": "local global webpage image"
+    },
+    {
+      "projectImg": "assets/cmeSoonImg.svg",
+      "alt": "weather app mobile app images",
+      "title": "myForecast",
+      "webTags": "Web Development",
+      "freelanceTags": "",
+      "designTags": "UX/UI Design",
+      "description": "Dive into a sleek and straightforward weather app, crafted with React Native. Designed for both Android and iOS, myForecast offers clear forecasts and a user-friendly interface",
+      "liveSiteLink": "https://www.localglobal.world/",
+      "gitHubLink": "https://github.com/toritsevalerie/WeatherApp",
+      "id": "projectSeven",
+      "mobileImgOne": "assets/SoonMobile.svg",
+      "mobileImgOneAlt": "react native weather app mobile image"
     }
   ],
   "contacts": [
