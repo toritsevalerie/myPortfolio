@@ -57,8 +57,8 @@
       "mobileImgOneAlt": "coming soon webpage image"
     },
     {
-      "projectImg": "assets/cmeSoonImg.svg",
-      "alt": "coming soon image",
+      "projectImg": "assets/numberNinjasWeb.svg",
+      "alt": "game screen for math interaction app",
       "title": "Number Ninjas",
       "webTags": "Web Development",
       "freelanceTags": "",
@@ -67,7 +67,7 @@
       "liveSiteLink": "https://number-ninjas.netlify.app/",
       "gitHubLink": "https://github.com/toritsevalerie/numberNinjas",
       "id": "projectFive",
-      "mobileImgOne": "assets/SoonMobile.svg",
+      "mobileImgOne": "assets/numberNinjasMobile.svg",
       "mobileImgOneAlt": "coming soon webpage image"
     },
     {
@@ -87,12 +87,12 @@
     {
       "projectImg": "assets/cmeSoonImg.svg",
       "alt": "weather app mobile app images",
-      "title": "myForecast",
+      "title": "My Forecast App",
       "webTags": "Web Development",
       "freelanceTags": "",
       "designTags": "UX/UI Design",
-      "description": "Dive into a sleek and straightforward weather app, crafted with React Native. Designed for both Android and iOS, myForecast offers clear forecasts and a user-friendly interface",
-      "liveSiteLink": "https://www.localglobal.world/",
+      "description": "Dive into a sleek and straightforward mobile weather app, crafted with React Native. Designed for both Android and iOS, myForecast offers clear forecasts and a user-friendly interface. Download Expo & click the link using your phone to view! ",
+      "liveSiteLink": "https://expo.dev/@toritseval/weatherApp",
       "gitHubLink": "https://github.com/toritsevalerie/WeatherApp",
       "id": "projectSeven",
       "mobileImgOne": "assets/SoonMobile.svg",
