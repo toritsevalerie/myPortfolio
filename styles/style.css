@@ -705,6 +705,10 @@ button {
   letter-spacing: 5px;
   margin-top: 50px;
 }
+.websiteContent .homePage .loading {
+  margin-top: 60px;
+  display: none;
+}
 .websiteContent .homePage .recentProjects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -880,6 +884,10 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin: 20px 68px;
+}
+.projectPage .projectsProjectPage .loading {
+  margin-top: 60px;
+  display: none;
 }
 .projectPage .projectsProjectPage .individualProject {
   display: -webkit-box;
