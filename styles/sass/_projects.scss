@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin: 20px 68px;
+    .loading { 
+      margin-top: 60px;
+      display: none;
+    }
 
     .individualProject {
       display: flex;

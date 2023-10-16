@@ -1,42 +1,28 @@
-// Contact: Firebase
-
-import app from "./firebaseConfig.js";
-import {
-  get,
-  ref,
-  getDatabase,
-  push,
-} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
-
-// reference the database
-
-const database = getDatabase(app);
-
-// reference the contact database
-
-const contactRef = ref(database, "/contacts");
-
 const contactForm = document.querySelector(".contactForm");
 const submitButton = document.querySelector(".submitButton");
-
-const contactFields = {
-  name: document.querySelector("#username"),
-  email: document.querySelector("#emailAddress"),
-  message: document.querySelector("#message"),
-};
 
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  // Prepare the data to be pushed
-  const contactDataToPush = {};
+  let name = document.querySelector("#username").value;
+  let email = document.querySelector("#emailAddress").value;
+  let message = document.querySelector("#message").value;
 
-  for (let key in contactFields) {
-    contactDataToPush[key] = contactFields[key].value;
-    contactFields[key].value = "";
-  }
+  let body =
+    "Name:" + name + "<br/> Email:" + email + "<br/> Message:" + message;
 
-  push(contactRef, contactDataToPush);
+  Email.send({
+    SecureToken: "1e4b52c5-9b9b-43bd-8511-8b44910d9ec8",
+    To: "torisevalerie@gmail.com",
+    From: document.querySelector("#emailAddress").value,
+    Subject: "Toritse Portfolio: New Message",
+    Body: body,
+  }).then((message) => alert(message));
+
+  // Clear the form fields
+  document.querySelector("#username").value = "";
+  document.querySelector("#emailAddress").value = "";
+  document.querySelector("#message").value = "";
 
   submitButton.innerHTML = "Thanks";
 
