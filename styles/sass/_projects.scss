@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin: 20px 68px;
-    .loading { 
+    .loading {
       margin-top: 60px;
       display: none;
     }
@@ -61,7 +61,10 @@
           padding: 10px 8px;
           border-radius: 5px;
           background-color: $white;
-
+          &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+          }
           &:active {
             background-color: $brown;
             color: $white;
@@ -132,7 +135,7 @@
 }
 @media (max-width: 768px) {
   .projectPage {
-    .projectsProjectPage{
+    .projectsProjectPage {
       .individualProject {
         .mobileImage {
           display: block;
@@ -154,7 +157,7 @@
 
 @media (max-width: 373px) {
   .projectPage {
-    .projectsProjectPage{
+    .projectsProjectPage {
       .individualProject {
         .mobileImage {
           width: 200px;
