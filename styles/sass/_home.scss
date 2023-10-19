@@ -7,11 +7,16 @@
       font-family: HelveticaRounded;
       font-size: 50px;
       letter-spacing: 5px;
-      margin-top: 50px;
+      margin-top: 30px;
     }
-    .loading { 
+    .loading {
       margin-top: 60px;
       display: none;
+    }
+    .myName {
+      margin: 0px 0px 15px 0px;
+      font-size: 40px;
+      letter-spacing: 5px;
     }
 
     .recentProjects {
@@ -72,6 +77,12 @@
             padding: 10px 8px;
             border-radius: 5px;
             background-color: $white;
+            
+            &:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+            }
+
             &:active {
               background-color: $brown;
               color: $white;

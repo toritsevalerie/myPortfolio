@@ -148,6 +148,8 @@ get(projectRef)
           // Check for screen width
           singleProjectContainerDiv.style.backgroundImage = `url(${projectImage})`;
           singleProjectContainerDiv.style.backgroundSize = "contain";
+          singleProjectContainerDiv.style.backgroundRepeat = "no-repeat";
+          singleProjectContainerDiv.style.backgroundPosition = "center";
 
           // Hide the h2, p, and .tags elements
           projectHeadingElement.style.opacity = "0";
