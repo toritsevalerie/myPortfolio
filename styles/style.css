@@ -715,6 +715,7 @@ button {
   margin: 0px 0px 15px 0px;
   font-size: 40px;
   letter-spacing: 5px;
+  text-align: center;
 }
 .websiteContent .homePage .recentProjects {
   display: grid;
@@ -884,6 +885,9 @@ button {
 @media (max-width: 734px) {
   .websiteContent .wrapper .homePage .title {
     margin-top: 60px;
+  }
+  .websiteContent .wrapper .homePage .myName {
+    text-align: center;
   }
 }
 @media (max-width: 373px) {
